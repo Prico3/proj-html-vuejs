@@ -8,7 +8,7 @@ export default {}
 
     <div class="info">
 
-        <div class="container d-flex justify-content-between align-items-center">
+        <div class="ms_container d-flex justify-content-between align-items-center">
 
             <div class="left_info">
                 ciao

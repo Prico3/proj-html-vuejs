@@ -4,6 +4,8 @@ export default {}
 
 <template>
 
+
+
     <div class="info">
 
         <div class="container d-flex justify-content-between align-items-center">
@@ -20,25 +22,17 @@ export default {}
 
     </div>
 
+
+
 </template>
 
 <style lang="scss" scoped>
-@use "../styles/partials/variables";
+@use "../styles/partials/variables" as *;
 
 .info {
-    //debug
-    height: 50px;
-    color: black;
-}
-
-.left_info {
-    //debug
-    border: 1px solid black;
-
-}
-
-.right_info {
-    //debug
-    border: 1px solid green;
+    background-color: $dark_vibrant;
+    color: $pumice;
+    align-items: center;
+    padding: 0.5rem 0;
 }
 </style>

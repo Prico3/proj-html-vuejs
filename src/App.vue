@@ -1,11 +1,13 @@
 <script >
 import TopInfoVue from './components/TopInfo.vue';
 import HeaderAppVue from './components/HeaderApp.vue';
+import JumboAppVue from './components/JumboApp.vue';
 
 export default {
   components: {
     TopInfoVue,
     HeaderAppVue,
+    JumboAppVue,
 
   }
 }
@@ -15,6 +17,7 @@ export default {
   <TopInfoVue />
   <div class="ciao">
     <HeaderAppVue />
+    <JumboAppVue />
 
   </div>
 </template>

@@ -5,6 +5,7 @@ import JumboAppVue from './components/JumboApp.vue';
 import ServicesAppVue from './components/ServicesApp.vue';
 import CompanyAppVue from './components/CompanyApp.vue';
 import ProjectsAppVue from './components/ProjectsApp.vue';
+import ResultsAppVue from './components/ResultsApp.vue';
 
 export default {
   components: {
@@ -14,6 +15,7 @@ export default {
     ServicesAppVue,
     CompanyAppVue,
     ProjectsAppVue,
+    ResultsAppVue,
   }
 }
 </script>
@@ -30,6 +32,7 @@ export default {
   <ServicesAppVue />
   <CompanyAppVue />
   <ProjectsAppVue />
+  <ResultsAppVue />
 </template>
 
 <style lang="scss">

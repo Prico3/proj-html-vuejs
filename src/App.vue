@@ -4,6 +4,7 @@ import HeaderAppVue from './components/HeaderApp.vue';
 import JumboAppVue from './components/JumboApp.vue';
 import ServicesAppVue from './components/ServicesApp.vue';
 import CompanyAppVue from './components/CompanyApp.vue';
+import ProjectsAppVue from './components/ProjectsApp.vue';
 
 export default {
   components: {
@@ -12,7 +13,7 @@ export default {
     JumboAppVue,
     ServicesAppVue,
     CompanyAppVue,
-
+    ProjectsAppVue,
   }
 }
 </script>
@@ -28,7 +29,7 @@ export default {
 
   <ServicesAppVue />
   <CompanyAppVue />
-
+  <ProjectsAppVue />
 </template>
 
 <style lang="scss">

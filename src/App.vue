@@ -6,6 +6,7 @@ import ServicesAppVue from './components/ServicesApp.vue';
 import CompanyAppVue from './components/CompanyApp.vue';
 import ProjectsAppVue from './components/ProjectsApp.vue';
 import ResultsAppVue from './components/ResultsApp.vue';
+import FormAppVue from './components/FormApp.vue';
 
 export default {
   components: {
@@ -16,6 +17,7 @@ export default {
     CompanyAppVue,
     ProjectsAppVue,
     ResultsAppVue,
+    FormAppVue,
   }
 }
 </script>
@@ -33,6 +35,7 @@ export default {
   <CompanyAppVue />
   <ProjectsAppVue />
   <ResultsAppVue />
+  <FormAppVue />
 </template>
 
 <style lang="scss">

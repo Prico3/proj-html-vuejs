@@ -78,6 +78,10 @@ export default {}
             </div>
 
         </div>
+        <div class="bullets d-flex">
+            <img src="../assets/img/bullets.png" alt="">
+            <img src="../assets/img/bullets.png" alt="">
+        </div>
     </section>
 
 </template>
@@ -87,6 +91,19 @@ export default {}
 
 section {
     background-color: $gray_nurse;
+    position: relative;
+
+    .bullets {
+        position: absolute;
+        left: 46%;
+        bottom: -25px;
+        z-index: 999;
+
+        img {
+            width: 50px;
+        }
+
+    }
 }
 
 .ms_container {

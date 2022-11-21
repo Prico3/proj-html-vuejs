@@ -6,11 +6,12 @@ export default {
 
 <template>
     <section class="d-flex">
+
         <div class="section_left d-flex flex-row-reverse align-items-center">
             <div class="wrapper">
-                <p>ABOUT THE NETWORK</p>
-                <h2><a href="">The </a>Company</h2>
-                <p>
+                <p class="smaller_title">ABOUT THE NETWORK</p>
+                <h2 class="section_title"><a class="secondary_section_title" href="">The </a>Company</h2>
+                <p class="description">
                     For 12 years we have been providing audit and warranty, financial advice, risk advice, taxes and
                     related services to selects clients.
                 </p>
@@ -18,22 +19,22 @@ export default {
                     <div class="col">
                         <i class="fa-solid fa-medal"></i>
                         <span>Tradition</span>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                     </div>
                     <div class="col">
-                        <i class="fa-solid fa-medal"></i>
+                        <i class="fa-solid fa-lock"></i>
                         <span>Tradition</span>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                     </div>
                     <div class="col">
-                        <i class="fa-solid fa-medal"></i>
+                        <i class="fa-regular fa-pen-to-square"></i>
                         <span>Tradition</span>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                     </div>
                     <div class="col">
-                        <i class="fa-solid fa-medal"></i>
+                        <i class="fa-solid fa-graduation-cap"></i>
                         <span>Tradition</span>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
                 <button>GET IN TOUCH</button>
@@ -42,7 +43,11 @@ export default {
         </div>
 
         <div class="section_right">
-            <img src="../assets/img/about-4.jpg" alt="">
+
+        </div>
+        <div class="bullets d-flex">
+            <img src="../assets/img/bullets.png" alt="">
+            <img src="../assets/img/bullets.png" alt="">
         </div>
     </section>
 </template>
@@ -52,23 +57,59 @@ export default {
 
 section {
     background-color: $woodsmoke;
+    position: relative;
+
+    .bullets {
+        position: absolute;
+        left: 46%;
+        bottom: -25px;
+
+        img {
+            width: 50px;
+        }
+
+    }
 }
 
 .section_left {
-    width: 55%;
+    width: 50%;
+    padding: 4rem 1.5rem 4rem 0;
 
 
     .wrapper {
-        // debug
-        border: 1px solid green;
-
-        width: 63%;
+        width: 60%;
         color: white;
+
+        .row {
+            margin-top: 3rem;
+
+            .col {
+
+                i {
+                    color: $fountain_blue;
+                    margin-right: 10px;
+                }
+
+                span {
+                    font-weight: 700;
+                }
+
+                p {
+                    margin-top: 0.5rem;
+                }
+            }
+
+        }
+
 
     }
 }
 
 .section_right {
-    width: 45%;
+    width: 50%;
+    background-image: url("../assets/img/about-4.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
 }
 </style>

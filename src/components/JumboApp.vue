@@ -11,9 +11,10 @@ export default {}
 
                 <h1>
                     Ready
-                    <a href="">Team</a>
+                    <a class="primary_section_title" href="">Team</a>
                 </h1>
-                <p>No matter what your company needs, we will be ready to assist you in yhe best possible way.</p>
+                <p class="description">No matter what your company needs, we will be ready to assist you in the best
+                    possible way.</p>
                 <button>GET IN TOUCH</button>
                 <button>READ MORE</button>
 
@@ -41,5 +42,9 @@ export default {}
     margin: auto;
     width: 35%;
     text-align: center;
+
+    h1 {
+        font-weight: 900;
+    }
 }
 </style>

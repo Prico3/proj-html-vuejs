@@ -45,7 +45,8 @@ export default {
 <style lang="scss">
 @use "./styles/general.scss" as *;
 
-.shares_bg {
+.shared_bg {
   background-image: url("./assets/img/bg-jumbo.webp");
+
 }
 </style>

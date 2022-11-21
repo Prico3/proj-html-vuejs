@@ -9,7 +9,7 @@ export default {}
 
             <div class="wrapper">
 
-                <h1>
+                <h1 class="section_title">
                     Ready
                     <a class="primary_section_title" href="">Team</a>
                 </h1>
@@ -43,8 +43,6 @@ export default {}
     width: 35%;
     text-align: center;
 
-    h1 {
-        font-weight: 900;
-    }
+
 }
 </style>

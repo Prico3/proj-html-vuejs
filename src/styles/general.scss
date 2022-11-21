@@ -34,6 +34,10 @@ a {
     }
 }
 
+.section_title {
+    font-weight: 900;
+}
+
 .primary_section_title {
     color: #038484;
     background-color: #6ca0a05b;
@@ -44,5 +48,11 @@ a {
 .description {
     color: #bcbebc;
     font-size: smaller;
-    padding: 0 0.3rem;
+
+}
+
+.smaller_title {
+    color: #52bbba;
+    font-size: xx-small;
+    font-weight: 900;
 }

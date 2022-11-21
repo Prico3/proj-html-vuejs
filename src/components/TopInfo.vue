@@ -12,19 +12,25 @@ export default {}
 
             <div class="left_info">
                 <div class="icon">
-                    <i class="fa-solid fa-clock"></i>
-                    <span>Open Hours: Mon - Sat - 9:00 - 18:00</span>
+                    <a href="">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>Open Hours: Mon - Sat - 9:00 - 18:00</span>
+                    </a>
                 </div>
             </div>
 
             <div class="right_info d-flex">
                 <div class="icon">
-                    <i class="fa-solid fa-phone"></i>
-                    <span>+1 (305) 1234-5678</span>
+                    <a href="">
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+1 (305) 1234-5678</span>
+                    </a>
                 </div>
                 <div class="icon">
-                    <i class="fa-solid fa-envelope"></i>
-                    <span>hello@examples.com</span>
+                    <a href="">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>hello@examples.com</span>
+                    </a>
                 </div>
                 <a href="">
                     <i class="fa-brands fa-facebook-f"></i>

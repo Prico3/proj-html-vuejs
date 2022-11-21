@@ -37,8 +37,8 @@ export default {}
                             <textarea class="form-control" id="message" rows="3" placeholder="Message"></textarea>
                         </div>
                     </div>
+                    <button>SEND</button>
                 </form>
-                <button>SEND</button>
 
             </div>
             <div class="right_container">

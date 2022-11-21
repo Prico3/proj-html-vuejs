@@ -53,14 +53,12 @@ export default {
 
             <div class="row row-cols-3">
 
-
                 <div class="col" v-for="item in info" :style="bgImg">
                     <div class="ms_card">
                         <p>{{ item.text }}</p>
 
                     </div>
                 </div>
-
 
             </div>
         </div>

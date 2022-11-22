@@ -27,7 +27,8 @@ export default {
     },
     computed: {
         bgImg() {
-            return `background-image: url("../assets/img/project-1.jpg");`;
+            return `background-image: url("../assets/img/${this.info.bg}");`;
+
         }
     }
 }
@@ -51,7 +52,7 @@ export default {
 
             </ul>
 
-            <div class="row row-cols-3">
+            <div class="row row-cols-3 g-4">
 
                 <div class="col" v-for="item in info" :style="bgImg">
                     <div class="ms_card">
@@ -75,7 +76,11 @@ export default {
 ul li {
     margin: 3rem 0.3rem;
     font-size: smaller;
+
 }
 
-.ms_card {}
+.ms_card {
+    background-color: bisque;
+    border-radius: 15px;
+}
 </style>

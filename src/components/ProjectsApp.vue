@@ -4,33 +4,50 @@ export default {
         return {
             info: [
                 {
-                    text: "Academic professional program in social media",
-                    bg: 'project-1.jpg',
+                    text: "ALL",
+                    link: "https://www.instagram.com/dario_moccia/?hl=it",
+
+
                 },
                 {
-                    text: "President's speech at the annual meeting"
+                    text: "INSTITUTIONAL",
+                    link: "url"
+
                 },
                 {
-                    text: "International business trip in Shanghai"
+                    text: "SOCIAL",
+                    link: "url"
+
                 },
                 {
-                    text: "Technology workshop with education theme"
+                    text: "EVENTS",
+                    link: "url"
+
                 },
                 {
-                    text: "Donation og clothes and food to the partner NGO"
+                    text: "INNOVATION",
+                    link: "url"
+
                 },
                 {
-                    text: "Confraternization of the procurment team"
+                    text: "ENVIROMENT",
+                    link: "url"
+
+                },
+                {
+                    text: "TECHNOLOGY",
+                    link: "url"
+
                 },
             ]
         }
     },
-    computed: {
-        bgImg() {
-            return `background-image: url("../assets/img/${this.info.bg}");`;
-
+    methods: {
+        getImageUrl(imagePath) {
+            return new URL(imagePath, import.meta.url).href
         }
     }
+
 }
 </script>
 
@@ -39,25 +56,61 @@ export default {
         <div class="ms_container text-center">
             <p class="smaller_title">WE DO MORE FOR EVERYONE</p>
             <h2 class="section_title">Actions & <a class="primary_section_title" href="">Projects</a></h2>
+
             <ul class="d-flex justify-content-center">
 
-                <li><a href="">ALL</a></li>
-                <li><a href="">INSTITUTIONAL</a></li>
-                <li><a href="">SOCIAL</a></li>
-                <li><a href="">EVENTS</a></li>
-                <li><a href="">INNOVATION</a></li>
-                <li><a href="">ENVIROMENT</a></li>
-                <li><a href="">TECHNOLOGY</a></li>
-
+                <li v-for="item in info"><a :href="item.link">{{ item.text }}</a></li>
 
             </ul>
 
             <div class="row row-cols-3 g-4">
 
-                <div class="col" v-for="item in info" :style="bgImg">
-                    <div class="ms_card">
-                        <p>{{ item.text }}</p>
+                <div class="col ">
+                    <img class="img_bg" src="../assets/img/project-1.jpg" alt="">
+                    <div class="ms_card ">
+                        <h6 class="text-light">Academic professional program in social media</h6>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
 
+                </div>
+
+                <div class="col">
+                    <img class="img_bg" src="../assets/img/project-2.jpg" alt="">
+                    <div class="ms_card">
+                        <h6 class="text-light">President's speech at the annual meeting</h6>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <img class="img_bg" src="../assets/img/project-3.jpg" alt="">
+                    <div class="ms_card">
+                        <h6 class="text-light">International business trip in Shanghai</h6>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <img class="img_bg" src="../assets/img/project-4.jpg" alt="">
+                    <div class="ms_card">
+                        <h6 class="text-light">Technology workshop with education theme</h6>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <img class="img_bg" src="../assets/img/project-5.jpg" alt="">
+                    <div class="ms_card">
+                        <h6 class="text-light">Donation og clothes and food to the partner NGO</h6>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <img class="img_bg" src="../assets/img/project-6.jpg" alt="">
+                    <div class="ms_card">
+                        <h6 class="text-light">Confraternization of the procurment team</h6>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
 
@@ -76,11 +129,50 @@ export default {
 ul li {
     margin: 3rem 0.3rem;
     font-size: smaller;
+    color: $pumice;
+    padding: 0.5rem;
+
+    &:hover {
+        background-color: #6ca0a05b;
+        border-radius: 5px;
+    }
+
+}
+
+.col {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+
+    &:hover {
+        p {
+            display: block;
+        }
+    }
+
+    p {
+        display: none;
+    }
+
+    .img_bg {
+        border-radius: 15px;
+        filter: contrast(30%);
+
+    }
 
 }
 
 .ms_card {
-    background-color: bisque;
     border-radius: 15px;
+    width: 80%;
+
+    position: absolute;
+    bottom: 0;
+
+    h6 {
+        font-weight: 700;
+    }
+
 }
 </style>

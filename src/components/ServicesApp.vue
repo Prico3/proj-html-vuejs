@@ -122,6 +122,15 @@ section {
         border-radius: 10px;
         position: relative;
 
+        &:hover {
+            .i_special {
+                background-color: #6ca0a05b;
+                border-radius: 50%;
+                cursor: pointer;
+                padding: 5px;
+            }
+        }
+
         h6 {
             margin-top: 0.5rem;
             font-weight: 700;

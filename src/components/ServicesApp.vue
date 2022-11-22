@@ -10,12 +10,13 @@ export default {}
             <h2 class="section_title">Excellence in <a class="primary_section_title" href="">Services</a></h2>
 
             <div class="text d-flex justify-content-between">
-                <p class="description p_different">We are leaders in providing consultancy servivces with a set of
+                <p class="description p_different m-0">We are leaders in providing consultancy servivces with a set of
                     cutting-edge
                     technologies and a team
                     of a
-                    experienced and renowned professionals. These are some options that you can hire.</p>
-                <button>SEE ALL</button>
+                    experienced and renowned professionals. These are some options that you can hire.
+                </p>
+                <button class="btn primary_color">SEE ALL</button>
             </div>
 
             <div class="wrapper mt-4">
@@ -139,6 +140,10 @@ section {
             color: $bluelagoon;
         }
     }
+
+    // button {
+    //     height: 50px;
+    // }
 
 }
 </style>

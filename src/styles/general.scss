@@ -67,3 +67,29 @@ a {
     font-size: xx-small;
     font-weight: 900;
 }
+
+//Button
+.btn {
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+
+    &.primary_color {
+        background-color: #038484;
+        color: white;
+
+        &:hover {
+            color: #52bbba;
+        }
+    }
+
+    &.transparent {
+        border: 1px solid #038484;
+        color: #038484;
+
+        &:hover {
+            background-color: #038484;
+            color: white;
+        }
+    }
+
+}

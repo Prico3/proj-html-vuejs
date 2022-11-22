@@ -20,7 +20,7 @@ export default {}
                     <li><a href="">PROJECTS</a></li>
                     <li><a href="">RESULTS</a></li>
                     <li>
-                        <button>GET IN TOUCH</button>
+                        <button class="btn primary_color">GET IN TOUCH</button>
                     </li>
                 </ul>
             </div>

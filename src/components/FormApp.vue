@@ -37,7 +37,7 @@ export default {}
                             <textarea class="form-control" id="message" rows="3" placeholder="Message"></textarea>
                         </div>
                     </div>
-                    <button>SEND</button>
+                    <button class="btn primary_color">SEND</button>
                 </form>
 
             </div>
@@ -58,7 +58,7 @@ export default {}
                         <i class="fa-solid fa-location-dot"></i>
                         <span><a href="">Main Avenue, 987</a></span>
                     </div>
-                    <button>VIEW MAP</button>
+                    <button class="btn transparent">VIEW MAP</button>
                 </div>
             </div>
         </div>
@@ -81,6 +81,10 @@ section {
     textarea {
         background-color: $pumice;
         color: #6c7587;
+    }
+
+    button {
+        width: 100px;
     }
 }
 

@@ -37,8 +37,8 @@ export default {
                         <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
-                <button>GET IN TOUCH</button>
-                <button>READ MORE</button>
+                <button class="btn primary_color">GET IN TOUCH</button>
+                <button class="btn transparent text-light">READ MORE</button>
             </div>
         </div>
 
@@ -101,6 +101,9 @@ section {
 
         }
 
+        button {
+            margin: 0 1rem 0 0;
+        }
 
     }
 }

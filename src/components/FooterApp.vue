@@ -107,7 +107,7 @@ export default {
                             <i class="fa-solid fa-location-dot"></i>
                             <span><a href="">Main Avenue, 987</a></span>
                         </div>
-                        <button>GET IN TOUCH</button>
+                        <button class="btn primary_color">GET IN TOUCH</button>
                     </div>
                     <div class="col">
                         <div class="ms_card">

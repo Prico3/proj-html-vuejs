@@ -15,8 +15,8 @@ export default {}
                 </h1>
                 <p class="description">No matter what your company needs, we will be ready to assist you in the best
                     possible way.</p>
-                <button>GET IN TOUCH</button>
-                <button>READ MORE</button>
+                <button class="btn primary_color">GET IN TOUCH</button>
+                <button class="btn transparent">READ MORE</button>
 
             </div>
 
@@ -43,6 +43,8 @@ export default {}
     width: 35%;
     text-align: center;
 
-
+    button {
+        margin: 0.5rem;
+    }
 }
 </style>

@@ -5,64 +5,66 @@ export default {
             info: [
                 {
                     text: "ALL",
-                    link: "https://www.instagram.com/dario_moccia/?hl=it",
+                    link: "#",
 
 
                 },
                 {
                     text: "INSTITUTIONAL",
-                    link: "url"
+                    link: "#"
 
                 },
                 {
                     text: "SOCIAL",
-                    link: "url"
+                    link: "#"
 
                 },
                 {
                     text: "EVENTS",
-                    link: "url"
+                    link: "#"
 
                 },
                 {
                     text: "INNOVATION",
-                    link: "url"
+                    link: "#"
 
                 },
                 {
                     text: "ENVIROMENT",
-                    link: "url"
+                    link: "#"
 
                 },
                 {
                     text: "TECHNOLOGY",
-                    link: "url"
+                    link: "#"
 
                 },
             ]
         }
     },
-    methods: {
-        getImageUrl(imagePath) {
-            return new URL(imagePath, import.meta.url).href
-        }
-    }
 
 }
 </script>
 
 <template>
+
     <section id="projects">
+
         <div class="ms_container text-center">
+
+            <!-- SMALLER TITLE -->
             <p class="smaller_title">WE DO MORE FOR EVERYONE</p>
+
+            <!-- TITLE -->
             <h2 class="section_title">Actions & <a class="primary_section_title" href="">Projects</a></h2>
 
+            <!-- NAV -->
             <ul class="d-flex justify-content-center">
-
-                <li v-for="item in info"><a :href="item.link">{{ item.text }}</a></li>
-
+                <li v-for="item in info" class="description_dark"><a :href="item.link">{{ item.text }}</a></li>
             </ul>
 
+
+            <!-- COLS -->
             <div class="row row-cols-3 g-4">
 
                 <div class="col ">
@@ -115,8 +117,12 @@ export default {
                 </div>
 
             </div>
+            <!-- COLS -->
+
         </div>
+
     </section>
+
 </template>
 
 <style lang="scss" scoped>
@@ -129,7 +135,6 @@ export default {
 ul li {
     margin: 3rem 0.3rem;
     font-size: smaller;
-    color: $pumice;
     padding: 0.5rem;
 
     &:hover {
@@ -139,6 +144,7 @@ ul li {
 
 }
 
+// COLS
 .col {
     position: relative;
     display: flex;
@@ -163,6 +169,7 @@ ul li {
 
 }
 
+// CARD
 .ms_card {
     border-radius: 15px;
     width: 80%;

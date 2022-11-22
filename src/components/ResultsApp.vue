@@ -5,57 +5,95 @@ export default {
 </script>
 
 <template>
+
     <section id="results">
+
+        <!-- TOP CONTAINER -->
         <div class="top_container text-center">
+
             <div class="ms_container">
+
+                <!-- SMALLER TITLE -->
                 <p class="smaller_title">WHAT ARE WE DOING</p>
-                <h2 class="section_title"><a class="secondary_section_title" href="">Results</a> in Numbers</h2>
+                <!-- TITLE -->
+                <h2 class="section_title">
+                    <a class="secondary_section_title" href="">Results</a> in Numbers
+                </h2>
+
+                <!-- COLS -->
                 <div class="row row-cols-4 mt-5">
+
                     <div class="col">
                         <h4>128</h4>
                         <p>Certifications</p>
                     </div>
+
                     <div class="col">
                         <h4>230</h4>
                         <p>Employees</p>
                     </div>
+
                     <div class="col">
                         <h4>517</h4>
                         <p>Costumers</p>
                     </div>
+
                     <div class="col">
                         <h4>94</h4>
                         <p>Countries</p>
                     </div>
+
                 </div>
+                <!-- /COLS -->
+
             </div>
+
         </div>
+        <!-- /TOP CONTAINER -->
+
+        <!-- BOTTOM CONTAINER -->
         <div class="bottom_container">
+
             <div class="ms_container">
+
+                <!-- COLS -->
                 <div class="row row-cols-6 text-center">
+
                     <div class="col">
                         <img src="../assets/img/logo-1.png" alt="">
                     </div>
+
                     <div class="col">
                         <img src="../assets/img/logo-2.png" alt="">
                     </div>
+
                     <div class="col">
                         <img src="../assets/img/logo-3.png" alt="">
                     </div>
+
                     <div class="col">
                         <img src="../assets/img/logo-4.png" alt="">
                     </div>
+
                     <div class="col">
                         <img class="special" src="../assets/img/logo-5.png" alt="">
                     </div>
+
                     <div class="col">
                         <img src="../assets/img/logo-1.png" alt="">
                     </div>
 
                 </div>
+                <!-- /COLS -->
+
             </div>
+
         </div>
+        <!-- /BOTTOM CONTAINER -->
+
+
     </section>
+
 </template>
 
 <style lang="scss" scoped>
@@ -64,6 +102,7 @@ export default {
 section {
     padding: 3rem 0;
 
+    // TOP CONTAINER
     .top_container {
         background-image: url("../assets/img/bg-7.jpg");
         background-size: cover;
@@ -84,6 +123,7 @@ section {
         }
     }
 
+    // BOTTOM CONTAINER
     .bottom_container {
         padding: 3rem 0;
         background-color: $woodsmoke;

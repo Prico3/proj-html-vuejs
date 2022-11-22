@@ -3,6 +3,7 @@ export default {}
 </script>
 
 <template>
+    <section id="home"></section>
     <div class="jumbo d-flex align-items-center">
 
         <div class="ms_container ">
@@ -14,8 +15,13 @@ export default {}
                     <a class="primary_section_title" href="">Team</a>
                 </h1>
                 <p class="description">No matter what your company needs, we will be ready to assist you in the best
-                    possible way.</p>
-                <button class="btn primary_color">GET IN TOUCH</button>
+                    possible way.
+                </p>
+
+                <button class="btn primary_color">
+                    <a href="#form">GET IN TOUCH</a>
+                </button>
+
                 <button class="btn transparent">READ MORE</button>
 
             </div>

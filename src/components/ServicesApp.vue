@@ -3,7 +3,7 @@ export default {}
 </script>
 
 <template>
-    <section>
+    <section id="services">
 
         <div class="ms_container">
             <p class="smaller_title">OUR BUSINESS AREAS</p>

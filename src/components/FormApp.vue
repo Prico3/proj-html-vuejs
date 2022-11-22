@@ -3,7 +3,7 @@ export default {}
 </script>
 
 <template>
-    <section>
+    <section id="form">
         <div class="ms_container d-flex">
             <div class="left_container">
                 <p class="smaller_title">SEND A MESSAGE</p>

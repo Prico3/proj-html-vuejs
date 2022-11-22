@@ -52,7 +52,7 @@ export default {
 </script>
 
 <template>
-    <section>
+    <section id="projects">
         <div class="ms_container text-center">
             <p class="smaller_title">WE DO MORE FOR EVERYONE</p>
             <h2 class="section_title">Actions & <a class="primary_section_title" href="">Projects</a></h2>

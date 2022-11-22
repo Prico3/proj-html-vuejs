@@ -1,5 +1,32 @@
 <script>
-export default {}
+export default {
+    data() {
+        return {
+            header: [
+                {
+                    text: "HOME",
+                    link: "#home",
+                },
+                {
+                    text: "SERVICES",
+                    link: "#services",
+                },
+                {
+                    text: "ABOUT",
+                    link: "#company",
+                },
+                {
+                    text: "PROJECTS",
+                    link: "#projects",
+                },
+                {
+                    text: "RESULTS",
+                    link: "#results",
+                },
+            ]
+        }
+    }
+}
 </script>
 
 <template>
@@ -14,13 +41,14 @@ export default {}
 
             <div class="nav">
                 <ul class="d-flex align-items-center">
-                    <li><a href="">HOME</a></li>
-                    <li><a href="">SERVICES</a></li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">PROJECTS</a></li>
-                    <li><a href="">RESULTS</a></li>
+                    <li v-for="item in header">
+                        <a :href="item.link">{{ item.text }}</a>
+                    </li>
+
                     <li>
-                        <button class="btn primary_color">GET IN TOUCH</button>
+                        <button class="btn primary_color">
+                            <a href="#form">GET IN TOUCH</a>
+                        </button>
                     </li>
                 </ul>
             </div>

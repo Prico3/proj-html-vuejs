@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <section>
+    <section id="results">
         <div class="top_container text-center">
             <div class="ms_container">
                 <p class="smaller_title">WHAT ARE WE DOING</p>

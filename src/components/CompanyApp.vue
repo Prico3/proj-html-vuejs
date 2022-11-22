@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <section class="d-flex">
+    <section id="company" class="d-flex">
 
         <div class="section_left d-flex flex-row-reverse align-items-center">
             <div class="wrapper">
@@ -37,7 +37,9 @@ export default {
                         <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
-                <button class="btn primary_color">GET IN TOUCH</button>
+                <button class="btn primary_color">
+                    <a href="#form">GET IN TOUCH</a>
+                </button>
                 <button class="btn transparent text-light">READ MORE</button>
             </div>
         </div>

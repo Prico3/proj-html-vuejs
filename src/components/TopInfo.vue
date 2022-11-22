@@ -4,12 +4,10 @@ export default {}
 
 <template>
 
-
-
     <div class="info">
 
         <div class="ms_container d-flex justify-content-between align-items-center">
-
+            <!-- LEFT INFO -->
             <div class="left_info">
                 <div class="icon">
                     <a href="">
@@ -18,7 +16,9 @@ export default {}
                     </a>
                 </div>
             </div>
+            <!-- /LEFT INFO -->
 
+            <!-- RIGHT INFO -->
             <div class="right_info d-flex">
                 <div class="icon">
                     <a href="">
@@ -43,12 +43,11 @@ export default {}
                 </a>
 
             </div>
+            <!-- /RIGHT INFO -->
 
         </div>
 
     </div>
-
-
 
 </template>
 
@@ -64,7 +63,7 @@ export default {}
 
     .right_info div,
     a {
-        padding-left: 0.5rem;
+        padding-left: 1rem;
     }
 }
 </style>
